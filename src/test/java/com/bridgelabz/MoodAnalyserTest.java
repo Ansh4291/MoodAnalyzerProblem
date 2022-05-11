@@ -7,16 +7,16 @@ public class MoodAnalyserTest {
     @Test
     public void givenMessage_WhenProper_ShouldReturnSad(){
         MoodAnalyser moodAnalyser = new MoodAnalyser();
-        String result = moodAnalyser.analyseMood("Sad mood:-(");
+        String result = moodAnalyser.analyseMood("I Am In Sad mood :-( ");
         System.out.println(result);
-        Assertions.assertEquals("Sad" , result);
+        Assertions.assertEquals("SAD" , result);
     }
     @Test
     public void givenMessage_WhenProper_ShouldReturnHappy(){
         MoodAnalyser moodAnalyser = new MoodAnalyser();
         String result = moodAnalyser.analyseMood("User is Happy");
         System.out.println(result);
-        Assertions.assertEquals("Happy" , result);
+        Assertions.assertEquals("HAPPY" , result);
     }
 
 }
