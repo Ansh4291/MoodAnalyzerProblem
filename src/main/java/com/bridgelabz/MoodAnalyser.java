@@ -7,13 +7,19 @@ public class MoodAnalyser {
       analyseMood();
   }
     public String analyseMood(){
-        if (message.contains("Sad"))
-            return "SAD";
-        else if (message.contains("Happy"))
-            return "SAD";
-        else
-            return "HAPPY";
+      try{
+          if (message.contains("Sad"))
+              return "SAD";
+          else if (message.contains("Happy"))
+              return "HAPPY";
+          else
+              return "HAPPY";
 
-    }
+      }catch (NullPointerException e){
+          System.out.println("Null Pointer Exception occured ");
+      }
+      return null;
+      }
+
 
 }
