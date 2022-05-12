@@ -13,10 +13,10 @@ public class MoodAnalyserTest {
     }
     @Test
     public void givenMessage_WhenProper_ShouldReturnHappy(){
-        MoodAnalyser moodAnalyser = new MoodAnalyser("I Am In Any Mood :-) ");
+        MoodAnalyser moodAnalyser = new MoodAnalyser("I Am In Happy Mood :-) ");
         String result = moodAnalyser.analyseMood();
         System.out.println(result);
-        Assertions.assertEquals("HAPPY" , result);
+        Assertions.assertEquals("SAD" , result);
     }
 
 }
